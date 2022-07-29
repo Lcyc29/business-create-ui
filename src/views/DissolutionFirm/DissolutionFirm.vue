@@ -122,21 +122,20 @@
     </section>
 
     <section id="completing-party-section" class="mt-10">
-          <h2 class="mb-6">Completing Party</h2>
-          <v-card flat class="mt-6" :class="{ 'invalid-section': isCompletingPartyInvalid }">
-            <CompletingParty
-              class="py-8 px-6 section-container py-6"
-              :invalidSection="isCompletingPartyInvalid"
-              :completingParty="getCompletingParty"
-              :enableAddEdit="isRoleStaff"
-              :addressSchema="PersonAddressSchema"
-              :validate="isCompletingPartyInvalid"
-              @update="onUpdate($event)"
-              @valid="onValid($event)"
-            />
-
-          </v-card>
-        </section>
+      <h2 class="mb-6">Completing Party</h2>
+      <v-card flat class="mt-6" :class="{ 'invalid-section': isCompletingPartyInvalid }">
+        <CompletingParty
+          class="py-8 px-6 section-container py-6"
+          :invalidSection="isCompletingPartyInvalid"
+          :completingParty="getCompletingParty"
+          :enableAddEdit="isRoleStaff"
+          :addressSchema="PersonAddressSchema"
+          :validate="isCompletingPartyInvalid"
+          @update="onUpdate($event)"
+          @valid="onValid($event)"
+        />
+      </v-card>
+    </section>
 
     <!-- Certify -->
     <section id="certify-section" class="mt-10">
